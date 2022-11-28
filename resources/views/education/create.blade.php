@@ -24,7 +24,7 @@
                 <li class="breadcrumb-item"><a href="#">Skills</a></li>
                 <li class="breadcrumb-item"><a href="#">Liste User</a></li>
         </nav>
-
+        gdhfghfhfh
         <h2 style="margin-bottom: 40px">Education Detaills</h2>
 
         <div>
