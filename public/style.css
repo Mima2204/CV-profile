@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-left: 650px;
+}
+
+.blend {
+
+    font-family: "cairo", sans-serif;
+    background-color: black;
+}
+
+.blend {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 200px;
+    transform: translate(-50%, 50%);
+    color: white;
+    border-radius: 15px;
+}
+
+.blend span {
+
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1;
+    mix-blend-mode: difference;
+    z-index: 1;
+}
+
+.blend::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: aliceblue;
+    animation: move 8s linear infinite;
+    z-index: -1;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc(100% - 100px);
+
+    }
+
+    100% {
+        left: 0;
+    }
+}
